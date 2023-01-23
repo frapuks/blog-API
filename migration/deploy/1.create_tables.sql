@@ -1,0 +1,20 @@
+-- Deploy oblog:1.create_tables to pg
+
+BEGIN;
+
+CREATE TABLE category (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  route TEXT NOT NULL,
+  label TEXT NOT NULL
+);
+
+CREATE TABLE post (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  category_id INTEGER REFERENCES category(id) ON DELETE CASCADE,
+  slug TEXT NOT NULL,
+  title TEXT NOT NULL,
+  excerpt TEXT NOT NULL,
+  content TEXT NOT NULL
+);
+
+COMMIT;

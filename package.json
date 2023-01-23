@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "name": "data-atelier-o-blog-frapuks",
+  "version": "1.0.0",
+  "description": "Il est temps pour vous de mettre en pratique toutes les bonnes pratiques et les outils que l'on a découvert en ce début de Spé API & Data.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "set DEBUG=errorHandling & nodemon index.js",
+    "initDb": "bash migration/init_db.sh",
+    "initAPI": "bash initAPI.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Moai/Data-atelier-o-blog-frapuks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Moai/Data-atelier-o-blog-frapuks/issues"
+  },
+  "homepage": "https://github.com/O-clock-Moai/Data-atelier-o-blog-frapuks#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-jsdoc-swagger": "^1.8.0",
+    "fs": "^0.0.1-security",
+    "joi": "^17.7.0",
+    "path": "^0.12.7",
+    "pg": "^8.8.0"
+  }
+}

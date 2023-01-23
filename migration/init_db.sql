@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS oblog;
+DROP ROLE IF EXISTS admin_oblog;
+
+CREATE ROLE admin_oblog WITH LOGIN PASSWORD 'oblog';
+CREATE DATABASE oblog OWNER admin_oblog;

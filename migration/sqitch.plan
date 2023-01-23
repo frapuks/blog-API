@@ -1,0 +1,7 @@
+%syntax-version=1.0.0
+%project=oblog
+
+1.create_tables 2023-01-19T10:11:54Z franc <franc@Frapuks> # création des tables
+2.add_domains 2023-01-20T08:17:11Z franc <franc@Frapuks> # création des domaines SQL
+3.delete_constraint_on_delete_cascade 2023-01-21T09:41:18Z franc <franc@Frapuks> # Suppression de la contrainte ON DELETE CASCADE sur la FK catégory_id
+4.add_constraint_unique 2023-01-23T09:13:44Z franc <franc@Frapuks> # Ajout des contraintes UNIQUE
